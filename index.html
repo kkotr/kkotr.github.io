@@ -2,201 +2,38 @@
 <html lang="en-us">
 
 	<head>
-		<meta charset="utf-8" />
-		<title>Tic-Tac-Toe--</title>
-		<script type="text/JavaScript">
-			function canWin(a, b, c, symbol) {
-				if (a == c && symbol == a && b == "") {
-					return 2;
-				}
-				else if (a == b && symbol == a && c== "") {
-					return 3;
-				}
-				else if (b == c && symbol == b && a == "") {
-					return 1;
-				}
-				else {
-					return false;
-				}
-			}
+			<meta charset="utf-8" />
+			<title>Temporary Home Page | CIT 230 class | Frontend development</title>
+			<meta name="description" content="Short description of the site" />
+			<meta name="viewport" content="width=device-width" />
 
-			function whereToPlay(a, b, c, d, e, f, g, h, i, symbol) {
-				var horz = canWinHorz(a, b, c, d, e, f, g, h, i, symbol);
+			<script type="text/JavaScript">
 
-				if(horz != false) {
-					return horz;
-				}
-				var vertical = canWinVertical(a, b, c, d, e, f, g, h, i, symbol);
-				if(vertical != false) {
-					return vertical;
-				}
-				var diagonal = canWinDiagonal(a, b, c, d, e, f, g, h, i, symbol);
+			</script>
 
-				if(diagonal != false) {
-					return diagonal;
-				}
-				else {
-					return false;
-				}
-			}
-			function canWinVertical(a, b, c, d, e, f, g, h, i, symbol) {
-				var verticalWin = 0;
-
-				verticalWin = canWin(a, d, g, symbol);
-				if (verticalWin == 1){
-					return 'a';
-				}
-				else if (verticalWin == 2){
-					return 'd';
-				}
-				else if (verticalWin == 3){
-					return 'g';
-				}
-
-				verticalWin = canWin(b, e, h, symbol);
-				if (verticalWin == 1){
-					return 'b';
-				}
-				else if (verticalWin == 2){
-					return 'e';
-				}
-				else if (verticalWin == 3){
-					return 'h';
-				}
-
-				verticalWin = canWin(c, f, i, symbol);
-				if (verticalWin == 1){
-					return 'c';
-				}
-				else if (verticalWin == 2){
-					return 'f';
-				}
-				else if (verticalWin == 3){
-					return 'i';
-				}
-				return false;
-
-			}
-
-			function canWinHorz(a, b, c, d, e, f, g, h, i, symbol){
-				var top = canWin(a,b,c,symbol);
-				if(top != false){
-					if(top==1){
-						return "a";
-					}
-					else if(top==2){
-						return "b";
-					}
-					return "c";
-				}
-				var mid = canWin(d,e,f,symbol);
-				if(mid != false){
-					if(mid==1){
-						return "d";
-					}
-					else if(mid==2){
-						return "e";
-					}
-					return "f";
-				}
-				var bot = canWin(g,h,i,symbol);
-				if(bot != false){
-					if(bot==1){
-						return "g";
-					}
-					else if(bot==2){
-						return "h";
-					}
-					return "i";
-				}
-				else{
-					return false;
-				}
-			}
-
-			function canWinDiagonal(a, b, c, d, e, f, g, h, i, symbol){
-				var message = "test";
-				var x = canWin(a, e, i, symbol);
-				if (x == 2){
-					message = "Play the center position.";
-					window.alert(message);
-					return "e";
-				}
-				else if(x == 1){
-					message = "Play the top-left corner.";
-					window.alert(message);
-					return "a";
-				}
-				else if(x == 3){
-					message = "Play the bottom-right corner.";
-					window.alert(message);
-					return "i";
-				}
-
-				var y = canWin(c, e, g, symbol);
-				if (y == 1){
-					message = "Play the top-right corner."
-					window.alert(message);
-					return "c";
-				}
-				else if (y == 2){
-					message = "Play the center position.";
-					window.alert(message);
-					return "e";
-				}
-				else if (y == 3){
-					message = "Play the bottom-left corner.";
-					window.alert(mesage);
-					return "g";
-				}
-				return false;
-
-			}
-
-			//window.alert(canWinDiagonal("X","","","","X","","","","","X"));
-
-			function getBoard(){
-				output = "Play anywhere";
-				var a = document.getElementById('a').value.toUpperCase();
-				var b = document.getElementById('b').value.toUpperCase();
-				var c = document.getElementById('c').value.toUpperCase();
-				var d = document.getElementById('d').value.toUpperCase();
-				var e = document.getElementById('e').value.toUpperCase();
-				var f = document.getElementById('f').value.toUpperCase();
-				var g = document.getElementById('g').value.toUpperCase();
-				var h = document.getElementById('h').value.toUpperCase();
-				var i = document.getElementById('i').value.toUpperCase();
-				var x = whereToPlay(a,b,c,d,e,f,g,h,i,"X");
-				var o = whereToPlay(a,b,c,d,e,f,g,h,i,"O");
-				if (x!=false) {
-					output=x;
-				}
-				if (o != false) {
-					output = o;
-				}
-				window.alert(output);
-			}
-
-
-		</script>
 	</head>
 
 	<body>
-		<input id="a" style="width:25px">|
-		<input id="b" style="width:25px">|
-		<input id="c" style="width:25px">
-		<br>--------------------
-		<br>
-		<input id="d" style="width:25px">|
-		<input id="e" style="width:25px">|
-		<input id="f" style="width:25px">
-		<br>--------------------
-		<br>
-		<input id="g" style="width:25px">|
-		<input id="h" style="width:25px">|
-		<input id="i" style="width:25px">
-		<button type="button" onClick="getBoard()">Where do I play.</button>
+			<header>
+				<h1>Temporary Home Page</h1>
+					<nav>
+				<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="/homework/mobile-analysis.html">Home</a></li>
+
+				</ul>
+				</nav>
+		</header>
+		<main>
+				<h2>What we are about.</h2>
+			<p><b>paragraph describing what this is all about...and what you can expect to see here.</b></p>
+
+		</main>
+		<footer>
+		&copy; 2017 Kkottr
+		</footer>
 		<div id="output"></div>
+
 	</body>
 
 </html>
