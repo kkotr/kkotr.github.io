@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;    /* changes width property to total width instead of content width */
+
+}
+.localWeather{
+	position: absolute;
+	top: 50px;
+	margin-left: 192px;
+}
+#mainImage{
+width: 100%;
+	height: 550px;
+	opacity: 0.5;
+margin-top: 1%;
+}
+.middle_box .frank{
+	position: absolute;
+	left: 35%;
+	top: 15%;
+	font-size: 1.5em
+}
+.middle_box .current_temp{
+	position: absolute;
+	left: 35%;
+	top: 25%;
+	justify-content: space-between;
+	font-size: 1.75em
+}
+.middle_box h1{
+
+}
+.left_side{
+	position: absolute;
+	top: 55%;
+	left: 25%;
+}
+.left_side h4{
+	font-size: 1.15em;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+	display: block;   /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.home{
+	width: 65%;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+body {
+	margin: 0;  /* remove any margin from body to avoid unsightly gaps. */
+	padding: 0;  /* ditto for padding  */
+	background-color: salmon;
+display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
