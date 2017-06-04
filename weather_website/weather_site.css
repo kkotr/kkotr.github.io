@@ -26,14 +26,17 @@
 }
 
 .left_side{
-	position: absolute;
-	top: 61%;
-	left: 25%;
+	display: flex;
 	background-color: rgba(200,200,200,.6);
 	margin: .2em auto;
 	border: 1px solid;
 	border-radius: 5px;
 	padding: 0%;
+	flex: .33;
+	flex-flow: column;
+/*	justify-content: center;*/
+	align-items: center;
+
 }
 .left_side h4{
 	font-size: 1.15em;
@@ -91,6 +94,7 @@ main {
 	display: flex;
 	background-image: url("images/lucy.jpg");
 	background-size: cover;
+	flex-wrap: wrap;
 }
 
 .title .dice {
@@ -117,14 +121,42 @@ header {
 
 
 .middle_box {
-	position: absolute;
-	left: 35%;
-	top: 15%;
+	display: flex;
 	background-color: rgba(200,200,200,.6);
 	margin: .2em auto;
 	border: 1px solid;
 	border-radius: 5px;
 	padding-bottom: 0;
 	padding-top: 0;
+	flex: .33;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	width: 500px;
+	min-width: 370px;
 
+}
+.right_box {
+	display: flex;
+	background-color: rgba(200,200,200,.6);
+	margin: .2em auto;
+	border: 1px solid;
+	border-radius: 5px;
+	padding-bottom: 0;
+	padding-top: 0;
+	flex: .33;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.mm {
+display: flex;
+	justify-content: flex-end;
+}
+@media only screen and (max-width: 500px) {
+	.right_box {
+		display: none;
+	}
 }
