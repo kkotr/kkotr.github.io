@@ -17,6 +17,8 @@
 
 .middle_box .frank{
 	font-size: 1.5em;
+ margin-top: .2%;
+	margin-bottom: 2%;
 }
 .middle_box .current_temp{
 	justify-content: space-between;
@@ -25,8 +27,10 @@
 	padding-top: 0;
 }
 
-.left_side{
+.left_side {
 	display: flex;
+	width: 63%;
+	max-height: 15%;
 	background-color: rgba(200,200,200,.6);
 	margin: .2em auto;
 	border: 1px solid;
@@ -36,10 +40,16 @@
 	flex-flow: column;
 /*	justify-content: center;*/
 	align-items: center;
-
+	max-height: 9em;
 }
 .left_side h4{
 	font-size: 1.15em;
+	padding: 0%;
+	margin-bottom: 1%;
+}
+.left_side p {
+	padding: 0;
+	margin-top: 0%;
 }
 
 article,
@@ -94,7 +104,7 @@ main {
 	display: flex;
 	background-image: url("images/lucy.jpg");
 	background-size: cover;
-	flex-wrap: wrap;
+	flex-direction: column-reverse;
 }
 
 .title .dice {
@@ -103,10 +113,6 @@ main {
 }
 
 footer {
-position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
 background-color: #A6D8DB;
 }
 
@@ -115,11 +121,72 @@ header {
 }
 
 
+.middle_box {
+	display: flex;
+	width: 45%;
+	background-color: rgba(200,200,200,.6);
+	margin: .2em auto;
+	border: 1px solid;
+	border-radius: 5px;
+	padding-bottom: 0;
+	padding-top: 0;
+	/*flex: .33;*/
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	/*width: 500px;
+	min-width: 370px;*/
+
+}
+.right_box {
+	display: none;
+
+}
+/*min-width: 32em*/
+.mm {
+display: flex;
+	justify-content: flex-end;
+}
+header nav{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+@media only screen and (min-width: 32em) {
+
+	main {
+		display: flex;
+		background-image: none;
+		background-size: cover;
+		flex-direction: row;
+	}
 
 
+	.right_box {
+		display: flex;
+		background-color: rgba(200,200,200,.6);
+		margin: .2em auto;
+		border: 1px solid;
+		border-radius: 5px;
+		padding-bottom: 0;
+		padding-top: 0;
+		flex: .33;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
 
 
+.test {
+	margin-bottom: 0%;
+	margin-top: 0%;
+}
 
+.current_temp h1{
+	margin-bottom: 0;
+	margin-top: 0%;
+}
 .middle_box {
 	display: flex;
 	background-color: rgba(200,200,200,.6);
@@ -132,31 +199,24 @@ header {
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	width: 500px;
-	min-width: 370px;
-
+	/*width: 500px;
+	min-width: 370px;*/
+	background-image: url("images/snow.jpg");
 }
-.right_box {
-	display: flex;
-	background-color: rgba(200,200,200,.6);
-	margin: .2em auto;
-	border: 1px solid;
-	border-radius: 5px;
-	padding-bottom: 0;
-	padding-top: 0;
-	flex: .33;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
-
-}
-
-.mm {
-display: flex;
-	justify-content: flex-end;
-}
-@media only screen and (max-width: 500px) {
-	.right_box {
-		display: none;
+	.left_side {
+		display: flex;
+		background-color: rgba(200,200,200,.6);
+		margin: .2em auto;
+		border: 1px solid;
+		border-radius: 5px;
+		padding: 0%;
+		flex: .33;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
 	}
+	header nav {
+		position:inherit;
+	}
+
 }
