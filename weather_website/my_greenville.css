@@ -62,8 +62,8 @@ figure {
 }
 .localWeather{
 	position: absolute;
-	top: 50px;
-	margin-left: 192px;
+	top: 60px;
+	margin-left: 50px;
 }
 
 .middle_box .frank{
@@ -107,15 +107,16 @@ nav ul{
 	flex-direction: row;
 	justify-content: space-around;
 	padding-left: 0px;
-	background-color: #515760;
+	background-color: #373D46;
 	margin-bottom: 0;
+	flex-wrap: wrap;
 }
 .home{
-	width: 65%;
+
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
-	padding-left: 0px;
+	padding: 0px;
 }
 body {
 	margin: 0;  /* remove any margin from body to avoid unsightly gaps. */
@@ -132,7 +133,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+b {
 	font-family: 'Indie Flower', cursive;
 }
 li a {
@@ -148,7 +150,7 @@ nav a:link {
 }
 main {
 	display: flex;
-	background-image: url("images/lucy.jpg");
+	background-image: url("images/weather_six.jpg");
 	background-size: cover;
 	flex-direction: column-reverse;
 }
@@ -160,6 +162,7 @@ main {
 
 footer {
 	background-color: #515760;
+	padding-bottom: 20%;
 }
 
 header {
@@ -197,18 +200,31 @@ header {
 header nav{
 	position: fixed;
 	bottom: 0;
-	left: 0;
-	right: 0;
+	left: 1;
+	right: 1;
+}
+.title {
+	color: #FFB272;
+	padding-bottom: 5%;
 }
 @media only screen and (min-width: 32em) {
 
+	.localWeather{
+		position: absolute;
+		top: 55px;
+		margin-left: 192px;
+	}
 	main {
 		display: flex;
 		background-image: none;
 		background-size: cover;
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
-
+	.title {
+		color: #FFB272;
+		padding-bottom: 0%;
+	}
 
 	.right_box {
 		display: flex;
@@ -218,10 +234,14 @@ header nav{
 		border-radius: 5px;
 		padding-bottom: 0;
 		padding-top: 0;
-		flex: .33;
+		flex: .45;
 		flex-flow: column;
 		justify-content: center;
 		align-items: center;
+		max-height: 10em;
+		overflow: scroll;
+		margin-right: 10%;
+
 	}
 
 
@@ -237,18 +257,20 @@ header nav{
 	.middle_box {
 		display: flex;
 		background-color: rgba(200,200,200,.6);
-		margin: .2em auto;
+		margin: .2em 10%;
 		border: 1px solid;
 		border-radius: 5px;
 		padding-bottom: 0;
 		padding-top: 0;
-		flex: .33;
+		max-height: 15em;
 		flex-flow: column;
 		justify-content: center;
 		align-items: center;
-		/*width: 500px;
-		min-width: 370px;*/
+		width: 100%;
+		/*min-width: 370px;*/
 		background-image: url("images/weather_six.jpg");
+		order: -1;
+		margin-bottom: 5%;
 	}
 	.left_side {
 		display: flex;
@@ -257,13 +279,22 @@ header nav{
 		border: 1px solid;
 		border-radius: 5px;
 		padding: 0%;
-		flex: .33;
+		flex: .45;
 		flex-flow: column;
 		justify-content: center;
 		align-items: center;
+		margin-left: 10%;
 	}
 	header nav {
 		position:inherit;
 	}
-
+	footer{
+		position: fixed;
+		left: 0%;
+		right: 0%;
+		bottom: 0%;
+		padding-bottom: 0%;
+	}
 }
+
+
