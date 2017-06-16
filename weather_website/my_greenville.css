@@ -193,6 +193,10 @@ header {
 
 }
 /*min-width: 32em*/
+
+.main_title {
+	margin-left: .25em;
+}
 .mm {
 	display: flex;
 	justify-content: flex-end;
