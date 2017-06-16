@@ -204,8 +204,8 @@ header {
 header nav{
 	position: fixed;
 	bottom: 0;
-	left: 1;
-	right: 1;
+	left: 0;
+	right: 0;
 }
 .title {
 	color: #FFB272;
