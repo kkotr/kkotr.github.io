@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+* {
+	box-sizing: border-box;    /* changes width property to total width instead of content width */
+	/* ctrl + e = css rule */
+	/* ctrl + k = css help */
+	/*hadebrake*/
+	/*display:none;*/
+	/* display:initial;*/
+	/*border-radius: */
+	font-family: 'Indie Flower', cursive;
+
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+	display: block;   /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+}
+{
+border: 1px solid;
+border-radius: 5px;
+background-color: rgba(200,200,200,.6);
+}
+
+a:link {
+	text-decoration: none;
+	color: #FFB272;
+}
+body {
+	margin: 0;  /* remove any margin from body to avoid unsightly gaps. */
+	padding: 0;  /* ditto for padding  */
+	background-color: #515760;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	font-size: 20px;
+	color: #E3DDDF;
+}
+header {
+	background-color: #515760;
+
+}
+main {
+	display: flex;
+	background-size: cover;
+	flex-direction: row;
+}
+li {
+	list-style: none;
+}
+#names {
+	width: 45%;
+}
+#output{
+	width: 45%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	margin-right: 0;
+}
+footer {
+	background-color: #515760;
+	padding-bottom: 0%;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Short description of the site" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" type="text/css" href="/sandbox/pokemon.css">
+		<title>Pokemon API | CIT 230 class | List of Pokemon</title>
+	</head>
+	<body onload="catchPokemon();">
+		<header>
+			<h1>Pokemon List</h1>
+			<h3>Find your Pokemon</h3>
+		</header>
+		<main>
+			<div id="names">
+				<ul id="list">
+					<li class="li">Find me.</li>
+			</ul>
+					<button id="prev" onclick="previous();">Previous</button>&nbsp;<button id="next" onclick="next();">Next</button>
+			</div>
+			<div id="output"><img src="/sandbox/pokemon_ball.png" alt="PokeBall"></div>
+		</main>
+		<footer>
+			&copy; 2017 Kkottr
+			<script src='/sandbox/pokemon.js'></script>
+			<a href="/index.html">Home</a>
+		</footer>
+	</body>
+</html>
