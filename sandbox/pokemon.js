@@ -73,3 +73,4 @@ function getPokemonDetails(url){
 
 		})
 	}
+//Group: Zoe Miner & Kienen Kotter
