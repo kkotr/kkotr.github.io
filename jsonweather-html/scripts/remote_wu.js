@@ -51,7 +51,7 @@
 					var stat =  document.getElementById('status');
 					temp.innerHTML = '';
 					console.log(data.location.city);
-					document.getElementById('cityDisplay').innerHTML = data.location.city;
+					document.getElementById('cityDisplay').innerHTML = data.location.city + ', ' + data.location.state;
 					temp.innerHTML = data.current_observation.temp_f + '&nbsp;&deg;F';
 					summary.innerHTML = data.current_observation.weather;
 					add3.innerHTML = 'Wind Speed (MPH): ' + data.current_observation.wind_mph;
