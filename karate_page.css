@@ -47,12 +47,12 @@ nav a:link {
 	color: #FFB272;
 }
 	/* visited link */
-	a:visited {
+	a:hover {
 		color: green;
 	}
 
 	/* mouse over link */
-	a:hover {
+	a:visited {
 		color: coral;
 	}
 
