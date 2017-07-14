@@ -1,4 +1,3 @@
-
 //helper function to fetch the data from an external source
 function getJSON(url) {
 	return fetch(url)
@@ -9,20 +8,26 @@ function getJSON(url) {
 		console.log(error);
 	});
 }
+
+//function getData (){
+//	var url = "final_karate.json";
+//getJSON(url).then(function (data){
+//	console.log(data);
+//	displayDetails();
+//});
+//}
 //lets catch some pokemon
 function dictionary() {
-	var url = "/kkotr.github.io/final_karate.json"";
-	//call getJSON function to get the list of pokemon from the api
-	getJSON(url).then(function (data) {
-		//stuff that should happen after the request is done.
+	var url = "final_karate.json";
+	getJSON(url).then(function (data){
 		console.log(data);
 		var pokeList = document.getElementById('list');
 		pokeList.innerHTML = '';
-		data.results.forEach(function (poke) {
-			console.log(pokemon);
+		data.dictionary.forEach(function (poke) {
+			console.log(poke);
 			var pokeName = document.createElement('li');
-			pokeName.innerHTML = poke.dictionary.word + ' means: ' + poke.dictionary.meaning;
+			pokeName.innerHTML = pokeName.innerHTML = poke.word + ' means: ' + poke.meaning;
 			pokeList.appendChild(pokeName);
-		})
-	});
-}
+		});
+	})
+	}
