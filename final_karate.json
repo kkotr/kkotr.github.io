@@ -1,0 +1,169 @@
+{
+	"dictionary": [
+		{"word": "Dojo",
+		 "meaning":"Training gym or School"
+		},
+		{"word": "Rei",
+		 "meaning":"Bow"
+		},
+		{"word": "Kiotski",
+		 "meaning":"Attention"
+		},
+		{"word": "Yoi",
+		 "meaning":"Ready Stance"
+		},
+		{"word": "Kiai",
+		 "meaning":"Spirit Shout or Yell"
+		},
+		{"word": "Hajime",
+		 "meaning":"Start"
+		},
+		{"word": "Yame",
+		 "meaning":"Stop"
+		},
+		{"word": "Kata",
+		 "meaning":"Form or Dance of Death"
+		},
+		{"word": "Kumite",
+		 "meaning":"Sparring"
+		},
+		{"word": "Sempi",
+		 "meaning":"Assistant Instructor"
+		},
+		{"word": "Sensei",
+		 "meaning":"Instructor"
+		},
+		{"word": "Doshin",
+		 "meaning":"Head or Senior Instructor"
+		},
+		{"word": "Renshi",
+		 "meaning":"Jr. Master"
+		},
+		{"word": "Shihan",
+		 "meaning":"Master or Head Master"
+		},
+		{"word": "Hanshi",
+		 "meaning":"Grandmaster"
+		},
+		{"word": "Obi",
+		 "meaning":"Belt"
+		},
+		{"word": "Gi",
+		 "meaning":"Uniform"
+		},
+		{"word": "Yudansha",
+		 "meaning":"Black Blet Holder"
+		},
+		{"word": "Hayaku",
+		 "meaning":"Hurry or Quickly"
+		},
+		{"word": "Matte",
+		 "meaning":"Wait"
+		},
+		{"word": "Mawatte",
+		 "meaning":"Turn around"
+		},
+		{"word": "Shugo",
+		 "meaning":"Line Up"
+		},
+		{"word": "Seiza",
+		 "meaning":"Kneel"
+		},
+		{"word": "Tate",
+		 "meaning":"Stand Up"
+		},
+		{"word": "Tachimas",
+		 "meaning":"Stand up"
+		},
+		{"word": "Suware",
+		 "meaning":"Sit"
+		},
+		{"word": "Sensei ni rei",
+		 "meaning":"Bow to teacher"
+		},
+		{"word": "Shomen ni rei",
+		 "meaning":"Bow to front"
+		},
+		{"word": "Senei ni taishi",
+		 "meaning":"Face teacher"
+		},
+		{"word": "0-tagai ni rei",
+		 "meaning":"Bow to each other"
+		},
+		{"word": "Soji dojo",
+		 "meaning":"Clean dojo"
+		},
+		{"word": "Ichi",
+		 "meaning":"1"
+		},
+		{"word": "Ni",
+		 "meaning":"2"
+		},
+		{"word": "San",
+		 "meaning":"3"
+		},
+		{"word": "Shi",
+		 "meaning":"4"
+		},
+		{"word": "Go",
+		 "meaning":"5"
+		},
+		{"word": "Roku",
+		 "meaning":"6"
+		},
+		{"word": "Shichi",
+		 "meaning":"7"
+		},
+		{"word": "Hachi",
+		 "meaning":"8"
+		},
+		{"word": "Ku",
+		 "meaning":"9"
+		},
+		{"word": "Ju",
+		 "meaning":"10"
+		},
+		{"word": "Ju Ichi",
+		 "meaning":"11"
+		},
+		{"word": "Ju Ni",
+		 "meaning":"12"
+		},
+		{"word": "Ju San",
+		 "meaning":"13"
+		},
+		{"word": "Ju Shi",
+		 "meaning":"14"
+		},
+		{"word": "Ju Go",
+		 "meaning":"15"
+		},
+		{"word": "Ju Roku",
+		 "meaning":"16"
+		},
+		{"word": "Ju Shichi",
+		 "meaning":"17"
+		},
+		{"word": "Ju Hachi",
+		 "meaning":"18"
+		},
+		{"word": "Ju Ku",
+		 "meaning":"19"
+		},
+		{"word": "Ni Ju",
+		 "meaning":"20"
+		}],
+	"events": [
+		{"title": "Independence Day",
+		 "date":"July 4, 2017"
+		},
+		{"title": "Belt Test",
+		 "date":"July 20, 2017"
+		},
+		{"title": "Kailec's B-Day",
+		 "date":"July 14, 2017"
+		},
+		{"title": "Independence Day",
+		 "date":"July 4, 2017"
+		}]
+}
