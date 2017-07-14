@@ -46,6 +46,21 @@ nav a:link {
 	text-decoration: none;
 	color: #FFB272;
 }
+	/* visited link */
+	a:visited {
+		color: green;
+	}
+
+	/* mouse over link */
+	a:hover {
+		color: coral;
+	}
+
+	/* selected link */
+	a:active {
+		color: chartreuse;
+	}
+
 main {
 	display: flex;
 	background-size: cover;
