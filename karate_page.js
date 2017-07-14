@@ -31,3 +31,17 @@ function dictionary() {
 		});
 	})
 	}
+function events() {
+	var url = "final_karate.json";
+	getJSON(url).then(function (data){
+		console.log(data);
+		var pokeList = document.getElementById('list');
+		pokeList.innerHTML = '';
+		data.events.forEach(function (poke) {
+			console.log(poke);
+			var pokeName = document.createElement('li');
+			pokeName.innerHTML = pokeName.innerHTML = poke.title + ' is ' + poke.date;
+			pokeList.appendChild(pokeName);
+		});
+	})
+}
