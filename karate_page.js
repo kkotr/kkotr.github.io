@@ -26,7 +26,7 @@ function dictionary() {
 		data.dictionary.forEach(function (poke) {
 			console.log(poke);
 			var pokeName = document.createElement('li');
-			pokeName.innerHTML = pokeName.innerHTML = poke.word + ' means: ' + poke.meaning;
+			pokeName.innerHTML = poke.word + ' means: ' + poke.meaning;
 			pokeList.appendChild(pokeName);
 		});
 	})
