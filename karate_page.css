@@ -43,29 +43,45 @@ h6 {
 	font-family: 'Indie Flower', cursive;
 }
 /* mouse over link */
-nav a:hover {
-	color: chartreuse;
-}
 nav a:link {
 	text-decoration: none;
 	color: #FFB272;
 }
 
+/* visited link */
+nav a:visited {
+	color: coral;
+}
+
 /* mouse over link */
+nav a:hover {
+	color: chartreuse;
+}
+
+/* selected link */
+nav a:active {
+	color: crimson;
+}
+
+/* unvisited link */
+a:link {
+	color: #FFB272;
+}
+
+/* visited link */
 a:visited {
 	color: coral;
 }
 
-/* visited link */
+/* mouse over link */
 a:hover {
-		color: chartreuse;
-	}
+	color: chartreuse;
+}
 
-	/* selected link */
-	a:active {
-		color: chartreuse;
-	}
-
+/* selected link */
+a:active {
+	color: crimson;
+}
 main {
 	display: flex;
 	background-size: cover;
