@@ -42,6 +42,10 @@ h5,
 h6 {
 	font-family: 'Indie Flower', cursive;
 }
+/* mouse over link */
+nav a:hover {
+	color: chartreuse;
+}
 nav a:link {
 	text-decoration: none;
 	color: #FFB272;
@@ -54,7 +58,7 @@ a:visited {
 
 /* visited link */
 a:hover {
-		color: green;
+		color: chartreuse;
 	}
 
 	/* selected link */
