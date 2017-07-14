@@ -14,7 +14,7 @@ var tem = document.getElementById('temp')
 var mess = document.getElementById('message')
 
 function catchPokemon() {
-	var url = "../temp_homepage/weather_website/weather.json/weather.json/";
+	var url = "/temp_homepage/weather_website/weather.json/weather.json/";
 	//call getJSON function to get the list of pokemon from the api
 	getJSON(url).then(function (data) {
 		//stuff that should happen after the request is done.
