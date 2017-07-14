@@ -160,7 +160,7 @@ nav a:link {
 }
 main {
 	display: flex;
-	background-image: url("images/weather_six.jpg");
+	background-image: url("/temp_homepage/weather_website/images/weather_six.jpg");
 	background-size: cover;
 	flex-direction: column-reverse;
 }
@@ -282,7 +282,7 @@ header nav{
 		align-items: center;
 		width: 100%;
 		/*min-width: 370px;*/
-		background-image: url("../temp_homepage/images/weather_six.jpg");
+		background-image: url("/temp_homepage/weather_website/images/weather_six.jpg");
 		order: -1;
 		margin-bottom: 5%;
 	}

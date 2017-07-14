@@ -102,7 +102,7 @@ nav a:link {
 }
 main {
 	display: flex;
-	background-image: url("../temp_homepage/images/lucy.jpg");
+	background-image: url("/temp_homepage/weather_website/images/lucy.jpg");
 	background-size: cover;
 	flex-direction: column-reverse;
 }
@@ -201,7 +201,7 @@ header nav{
 	align-items: center;
 	/*width: 500px;
 	min-width: 370px;*/
-	background-image: url("../temp_homepage/images/snow.jpg");
+	background-image: url("/temp_homepage/weather_website/images/snow.jpg");
 }
 	.left_side {
 		display: flex;
