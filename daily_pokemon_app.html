@@ -12,13 +12,25 @@
 <h1>P Day</h1>
 </header>
 <main>
-<div id="output"><img src="/pictures/pokemon_ball.png" alt="PokeBall" id="pokeman"></div>
-
+	<div id="output"><img src="" alt="PokeBall" id="pokeman" onload="document.getElementById('audio_play').play(); return false;" /></div>
+	<div id="fb-root"></div>
+	<div class="fb-share-button" data-href="https://kkotr.github.io/daily_pokemon_app.html" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkkotr.github.io%2Fdaily_pokemon_app.html&amp;src=sdkpreparse">Share</a></div>
 </main>
+
 <footer>
-&copy; 2017 Kkottr
-<a href="/index.html">Home</a>
+	&copy; 2017 Kkottr
+	<a href="/index.html">Home</a>
+	<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 <script src='/daily_pokemon_app.js'></script>
+	<audio id="audio_play">
+		<source src="/107-battle-vs-wild-pokemon-.mp3" type="audio/mpeg" />
+	</audio>
 </footer>
 </body>
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 * {
 box-sizing: border-box;    /* changes width property to total width instead of content width */
@@ -8,7 +8,7 @@ box-sizing: border-box;    /* changes width property to total width instead of c
 /*display:none;*/
 /* display:initial;*/
 /*border-radius: */
-font-family: 'Indie Flower', cursive;
+font-family: 'Press Start 2P', cursive;
 
 }
 article,
@@ -39,11 +39,13 @@ color: #E3DDDF;
 }
 header {
 background-color: #515760;
+text-align: center;
 }
 main {
 display: flex;
+flex-direction: column;
 background-size: cover;
-flex-direction: row;
+align-items: center;
 }
 #pokeman{
 position: relative;
@@ -64,6 +66,13 @@ position:absolute;
 }
 
 footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0%;
 background-color: #515760;
-padding-bottom: 0%;
+	text-align: right;
+}
+
+.fb-share-button {
+
 }
